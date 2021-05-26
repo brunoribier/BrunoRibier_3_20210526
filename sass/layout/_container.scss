@@ -1,0 +1,23 @@
+
+
+.localisation {
+    display: flex;
+    justify-content: space-evenly;
+    & i, p {
+        color: $dark-grey;
+        font-size: 12rem;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+.fctnmt-step {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    &__count {
+        border-radius: 50%;
+        color: $white;
+        background-color: $primary-color;
+    }
+}
+

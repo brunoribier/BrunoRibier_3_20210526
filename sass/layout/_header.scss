@@ -1,0 +1,13 @@
+.header {
+    &__logo {
+        display: flex;
+        justify-content: center;
+        padding: 2rem 0 1rem 0;
+    }
+    & h1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 20rem;
+        font-weight: bold;
+        text-align: center;
+    }
+}
