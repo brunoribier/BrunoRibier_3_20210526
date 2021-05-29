@@ -1,0 +1,68 @@
+.localisation {
+    display: flex;
+    justify-content: center;
+    background-color: $light-grey-darker;
+    padding: 1em 0 1em 0;
+    & i, p {
+        color: $dark-grey;
+        font-size: 1rem;
+        margin: 5px;
+    }
+}
+
+.hero {
+    background-color: $light-grey;
+    text-align: center;
+    margin: 0px;
+    padding: 5em 0 5em 0;
+    & h1 {
+        font-weight: 500;
+        font-size: 2rem;
+    }
+    & h2 {
+        font-weight: 100;
+        font-size: 1.5rem;
+    }
+    & button {
+        color: $white;
+        font-size: 1.2rem;
+        padding: 1em;
+        border-radius: 40px;
+        border: none;
+        background: linear-gradient($secondary-color, $primary-color);
+    }
+}
+
+.fctnmt {
+    padding: 2em 0.5em 2em 0.5em;
+    & h2 {
+        font-size: 1.5;
+        font-weight: 500;
+    }
+    &-step {
+        display: flex;
+        align-items: center;
+
+        &__count {
+            border-radius: 50%;
+            color: $white;
+            background-color: $primary-color;
+            padding: 6px 9px 6px 9px;
+        }
+        &__box {
+            background-color: $light-grey;
+            padding-left: -5px;
+            display: flex;
+            align-items: center;
+            &__title {
+
+            }
+        }
+        & i {
+            color: $dark-grey;
+            &:active {
+                color: $primary-color;
+            }
+        }
+    }
+}

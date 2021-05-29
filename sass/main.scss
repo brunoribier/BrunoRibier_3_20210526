@@ -1,9 +1,11 @@
-@import "./base/typography";
-@import "./components/buttons";
-@import "./layout/container";
-@import "./layout/footer";
-@import "./layout/header";
-@import "./pages/";
-@import "./utils/mixins";
 @import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/typography";
+@import "./layout/layout";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./pages/home";
+@import "./pages/resto.scss"
+
+
 

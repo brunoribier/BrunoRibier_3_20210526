@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap");
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__logo {
+  padding: 1em 0 1em 0;
+  width: 50%;
+  max-width: 400px;
+}
+
+.header h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+footer {
+  color: #ffffff;
+  background-color: #2f2f2f;
+}
+
+footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.localisation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #eaeaea;
+  padding: 1em 0 1em 0;
+}
+
+.localisation i, .localisation p {
+  color: #2f2f2f;
+  font-size: 1rem;
+  margin: 5px;
+}
+
+.hero {
+  background-color: #f7f6f7;
+  text-align: center;
+  margin: 0px;
+  padding: 5em 0 5em 0;
+}
+
+.hero h1 {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.hero h2 {
+  font-weight: 100;
+  font-size: 1.5rem;
+}
+
+.hero button {
+  color: #ffffff;
+  font-size: 1.2rem;
+  padding: 1em;
+  border-radius: 40px;
+  border: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+}
+
+.fctnmt {
+  padding: 2em 0.5em 2em 0.5em;
+}
+
+.fctnmt h2 {
+  font-size: 1.5;
+  font-weight: 500;
+}
+
+.fctnmt-step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fctnmt-step__count {
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: #9356DC;
+  padding: 6px 9px 6px 9px;
+}
+
+.fctnmt-step__box {
+  background-color: #f7f6f7;
+  padding-left: -5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fctnmt-step i {
+  color: #2f2f2f;
+}
+
+.fctnmt-step i:active {
+  color: #9356DC;
+}
+/*# sourceMappingURL=main.css.map */

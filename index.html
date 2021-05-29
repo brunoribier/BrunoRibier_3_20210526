@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="sass/main.css">
 	<script src="https://kit.fontawesome.com/6c83ab6ed9.js" crossorigin="anonymous"></script>
 	<title>Oh My Food</title>
 
@@ -25,8 +25,8 @@
 </head>
 <!-- serious stuff starts right here -->
 <body>
-	<header>
-		<img src="images/logo/ohmyfood@2x.svg" alt="ohmyfood-logo" class="header__logo">
+	<header class="header">
+		<img class="header__logo" src="images/logo/ohmyfood@2x.svg" alt="ohmyfood-logo">
 	</header>
 	<section class="localisation">
 		<i class="fas fa-map-marker-alt"></i>
@@ -45,18 +45,18 @@
 			<div class="fctnmt-step">
 				<p class="fctnmt-step__count">1</p>
 				<i class="fas fa-mobile-alt"></i>
-				<p class="fctnmt-step__title">Choississez un restaurant</p>
+				<p class="fctnmt-step__box__title">Choississez un restaurant</p>
 			</div>
 		</section>
 <!-- section restaurants -->
 		<section class="restaurants">
 			<h2>Restaurants</h2>
-			<div class="restau-prev">
-				<img class="restau-prev__img" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
-				<div class="restau-prev__new">Nouveau</div>
-				<div class="restau-prev__bottom">
-					<h4 class="restau-prev__title1">La palette du goût</h4>
-					<h5 class="restau-prev__title2">Ménilmontant</h5>
+			<div class="resto-prev">
+				<img class="resto-prev__img" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
+				<div class="resto-prev__new">Nouveau</div>
+				<div class="resto-prev__bottom">
+					<h4 class="resto-prev__bottom__title1">La palette du goût</h4>
+					<h5 class="resto-prev__bottom__title2">Ménilmontant</h5>
 					<i class="far fa-heart"></i>
 				</div>
 			</div>
