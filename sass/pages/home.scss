@@ -34,7 +34,7 @@
 }
 
 .fctnmt {
-    padding: 2em 0.5em 2em 0.5em;
+    padding: 2em 1em 2em 1em;
     & h2 {
         font-size: 1.5;
         font-weight: 500;
@@ -42,27 +42,60 @@
     &-step {
         display: flex;
         align-items: center;
-
+        background-color: $super-light-grey;
+        border-radius: 20px;
+        padding: 1em 3em 1em 0em;
+        margin-left: 30px;
+        max-width: 300px;
         &__count {
             border-radius: 50%;
             color: $white;
             background-color: $primary-color;
             padding: 6px 9px 6px 9px;
-        }
-        &__box {
-            background-color: $light-grey;
-            padding-left: -5px;
-            display: flex;
-            align-items: center;
-            &__title {
-
-            }
-        }
+            margin: 0px 15px 0px -15px;
+            }    
         & i {
+            margin-right: 15px;
             color: $dark-grey;
-            &:active {
-                color: $primary-color;
+            font-size: 1.5rem;
+                &:active {
+                    color: $primary-color;
+                }
+        &__title {
+            font-size: 12em;
             }
+
+        }
+    }
+}
+
+.restaurants {
+    background-color: $light-grey;
+    padding: 4em 2em 4em 2em;
+}
+
+.resto-prev {
+    max-width: 80%;
+    position: relative;
+    & img {
+        object-fit: cover;
+        height: 12em;
+        width: 100%;
+        border-radius: 5px 5px 0px 0px;
+    }
+    &__bottom {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        padding: 1em 0 1em 0.5em;
+        background-color: $white;
+        & h4 {
+            font-weight: 500;
+            font-size: 1.5rem;
+        }
+        & h5 {
+            font-weight: 100;
+            font-size: 1.4rem;
         }
     }
 }

@@ -85,7 +85,7 @@ footer-nav {
 }
 
 .fctnmt {
-  padding: 2em 0.5em 2em 0.5em;
+  padding: 2em 1em 2em 1em;
 }
 
 .fctnmt h2 {
@@ -100,6 +100,11 @@ footer-nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #f4f4f4;
+  border-radius: 20px;
+  padding: 1em 3em 1em 0em;
+  margin-left: 30px;
+  max-width: 300px;
 }
 
 .fctnmt-step__count {
@@ -107,24 +112,56 @@ footer-nav {
   color: #ffffff;
   background-color: #9356DC;
   padding: 6px 9px 6px 9px;
-}
-
-.fctnmt-step__box {
-  background-color: #f7f6f7;
-  padding-left: -5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin: 0px 15px 0px -15px;
 }
 
 .fctnmt-step i {
+  margin-right: 15px;
   color: #2f2f2f;
+  font-size: 1.5rem;
 }
 
 .fctnmt-step i:active {
   color: #9356DC;
+}
+
+.fctnmt-step i__title {
+  font-size: 12em;
+}
+
+.restaurants {
+  background-color: #f7f6f7;
+  padding: 4em 2em 4em 2em;
+}
+
+.resto-prev {
+  max-width: 80%;
+  position: relative;
+}
+
+.resto-prev img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 12em;
+  width: 100%;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.resto-prev__bottom {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  padding: 1em 0 1em 0.5em;
+  background-color: #ffffff;
+}
+
+.resto-prev__bottom h4 {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.resto-prev__bottom h5 {
+  font-weight: 100;
+  font-size: 1.4rem;
 }
 /*# sourceMappingURL=main.css.map */
