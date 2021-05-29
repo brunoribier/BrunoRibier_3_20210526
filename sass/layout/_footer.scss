@@ -1,8 +1,33 @@
 
-footer {
+.footer {
     color: $white;
     background-color: $dark-grey;
-    &-nav {
+    padding: 2em 1em 2em 2em;
+    font-size: 1.5em;
+    line-height: 1.7em;
+    &__logo {
+        width: 115px;
+        padding: 0 0 0.5em 0;
+        filter: invert(100%);
+    }
+    &__nav1, &__nav2 {
         display: flex;
+        align-items: center;
+        & i {
+            padding-right: 0.5em;
+        }
+    }
+    &__nav1 {
+        & i {
+            padding-right: 1em;
+        }
+    } 
+    & a {
+        text-decoration: none;
+        color: $white;
+        display: block;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }

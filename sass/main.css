@@ -29,15 +29,46 @@ body {
   text-align: center;
 }
 
-footer {
+.footer {
   color: #ffffff;
   background-color: #2f2f2f;
+  padding: 2em 1em 2em 2em;
+  font-size: 1.5em;
+  line-height: 1.7em;
 }
 
-footer-nav {
+.footer__logo {
+  width: 115px;
+  padding: 0 0 0.5em 0;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+.footer__nav1, .footer__nav2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__nav1 i, .footer__nav2 i {
+  padding-right: 0.5em;
+}
+
+.footer__nav1 i {
+  padding-right: 1em;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
 
 .localisation {
@@ -85,12 +116,22 @@ footer-nav {
 }
 
 .fctnmt {
-  padding: 2em 1em 2em 1em;
+  padding: 2em 2em 3em 2em;
 }
 
 .fctnmt h2 {
   font-size: 1.5;
   font-weight: 500;
+}
+
+.fctnmt-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .fctnmt-step {
@@ -103,8 +144,9 @@ footer-nav {
   background-color: #f4f4f4;
   border-radius: 20px;
   padding: 1em 3em 1em 0em;
-  margin-left: 30px;
   max-width: 300px;
+  -webkit-box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.15);
 }
 
 .fctnmt-step__count {
@@ -117,16 +159,32 @@ footer-nav {
 
 .fctnmt-step i {
   margin-right: 15px;
+  position: relative;
   color: #2f2f2f;
   font-size: 1.5rem;
+  z-index: 1;
 }
 
-.fctnmt-step i:active {
+.fctnmt-step i:hover::after {
+  opacity: 1;
+}
+
+.fctnmt-step i::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   color: #9356DC;
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: opacity 250ms;
+  transition: opacity 250ms;
 }
 
-.fctnmt-step i__title {
-  font-size: 12em;
+.fctnmt-step__title {
+  font-size: 1em;
 }
 
 .restaurants {
@@ -134,34 +192,78 @@ footer-nav {
   padding: 4em 2em 4em 2em;
 }
 
+.resto-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .resto-prev {
-  max-width: 80%;
+  margin: 15px;
   position: relative;
+  -webkit-box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.resto-prev a {
+  text-decoration: none;
+  color: #000000;
 }
 
 .resto-prev img {
   -o-object-fit: cover;
      object-fit: cover;
-  height: 12em;
-  width: 100%;
-  border-radius: 5px 5px 0px 0px;
+  height: 15em;
+  width: 336px;
+  border-radius: 10px 10px 10px 10px;
 }
 
 .resto-prev__bottom {
   position: absolute;
   bottom: 0px;
-  width: 100%;
-  padding: 1em 0 1em 0.5em;
+  width: 311px;
+  padding: 10px 15px 10px 10px;
   background-color: #ffffff;
+  border-radius: 0 0 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.resto-prev__bottom h4 {
+.resto-prev__bottom__headings__title1 {
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  margin: 0 0 2px 0;
 }
 
-.resto-prev__bottom h5 {
+.resto-prev__bottom__headings__title2 {
   font-weight: 100;
-  font-size: 1.4rem;
+  font-size: 0.8rem;
+  margin: 0 0 0 0;
+}
+
+.resto-prev__bottom i {
+  display: inline-block;
+}
+
+.resto-prev__new {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #88deca;
+  color: #007450;
+  padding: 3px 5px 3px 5px;
+  border-radius: 3px;
 }
 /*# sourceMappingURL=main.css.map */

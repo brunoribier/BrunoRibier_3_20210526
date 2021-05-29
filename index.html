@@ -42,35 +42,48 @@
 <!-- section fonctionnement -->
 		<section class="fctnmt">
 			<h2>Fonctionnement</h2>
-			<div class="fctnmt-step">
-				<p class="fctnmt-step__count">1</p>
-				<i class="fas fa-mobile-alt"></i>
-				<p class="fctnmt-step__title">Choississez un restaurant</p>
+			<div class="fctnmt-list">
+				<div class="fctnmt-step">
+					<p class="fctnmt-step__count">1</p>
+					<i class="fas fa-mobile-alt"></i>
+					<p class="fctnmt-step__title">Choississez un restaurant</p>
+				</div>
 			</div>
 		</section>
 <!-- section restaurants -->
 		<section class="restaurants">
 			<h2>Restaurants</h2>
-			<div class="resto-prev">
-				<img class="resto-prev__img" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
-				<div class="resto-prev__new">Nouveau</div>
-				<div class="resto-prev__bottom">
-					<h4 class="resto-prev__bottom__title1">La palette du goût</h4>
-					<h5 class="resto-prev__bottom__title2">Ménilmontant</h5>
-					<i class="far fa-heart"></i>
-				</div>
+			<div class="resto-list">
+				<article class="resto-prev">
+					<a href="">
+						<img class="resto-prev__img" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
+						<div class="resto-prev__bottom">
+							<div class="resto-prev__bottom__headings">
+								<h4 class="resto-prev__bottom__headings__title1">La palette du goût</h4>
+								<h5 class="resto-prev__bottom__headings__title2">Ménilmontant</h5>
+							</div>
+							<i class="far fa-heart"></i>
+						</div>
+						<div class="resto-prev__new">Nouveau</div>
+					</a>
+				</article>
 			</div>
+			
 		</section>
 	</container>
 <!-- footer -->
-	<footer>
-		<img src="" alt="" class="">
-		<div class="footer-nav">
+	<footer class="footer">
+		<img src="images/logo/ohmyfood@2x.svg" alt="logo footer" class="footer__logo">
+		<div class="footer__nav1">
 			<i class="fas fa-utensils"></i>
-			<p> Proposer un restaurant</p>
+			<a href=""> Proposer un restaurant</a>
 		</div>
-		<p>Mentions légales</p>
-		<p href="to:hello@ohmyfood.com">Contact</p>
+		<div class="footer__nav2">
+			<i class="fas fa-handshake"></i>
+			<a href="">Devenir partenaire</a>
+		</div>
+		<a href="">Mentions légales</a>
+		<a href="mailto:hello@ohmyfood.com">Contact</a>
 	</footer>
 </body>
 </html>
