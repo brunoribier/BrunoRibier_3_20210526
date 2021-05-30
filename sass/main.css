@@ -14,6 +14,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.15);
+  z-index: 2;
 }
 
 .header__logo {
@@ -80,6 +84,7 @@ body {
           justify-content: center;
   background-color: #eaeaea;
   padding: 1em 0 1em 0;
+  z-index: 1;
 }
 
 .localisation i, .localisation p {
@@ -141,6 +146,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
   background-color: #f4f4f4;
   border-radius: 20px;
   padding: 1em 3em 1em 0em;
@@ -149,11 +155,31 @@ body {
           box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.15);
 }
 
+.fctnmt-step::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 20px;
+  background-color: rgba(147, 86, 220, 0.2);
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+  opacity: 0;
+}
+
+.fctnmt-step:hover::before {
+  -webkit-animation: fctnmt-hover-bg 0.5s;
+          animation: fctnmt-hover-bg 0.5s;
+  opacity: 1;
+}
+
 .fctnmt-step__count {
   border-radius: 50%;
   color: #ffffff;
   background-color: #9356DC;
-  padding: 6px 9px 6px 9px;
+  padding: 5px 10px 5px 10px;
   margin: 0px 15px 0px -15px;
 }
 
@@ -162,11 +188,6 @@ body {
   position: relative;
   color: #2f2f2f;
   font-size: 1.5rem;
-  z-index: 1;
-}
-
-.fctnmt-step i:hover::after {
-  opacity: 1;
 }
 
 .fctnmt-step i::after {
@@ -178,13 +199,44 @@ body {
   left: 0;
   color: #9356DC;
   opacity: 0;
-  z-index: -1;
-  -webkit-transition: opacity 250ms;
-  transition: opacity 250ms;
+}
+
+.fctnmt-step i:hover::after {
+  opacity: 1;
 }
 
 .fctnmt-step__title {
   font-size: 1em;
+}
+
+@-webkit-keyframes fctnmt-hover-bg {
+  from {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fctnmt-hover-bg {
+  from {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    opacity: 1;
+  }
 }
 
 .restaurants {
