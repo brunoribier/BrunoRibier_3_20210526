@@ -25,17 +25,14 @@ button {
     &:hover::before {
         animation: anim-button 0.4s;
         opacity: 1;
-        scale: 0.9;
     }
 }
 
 @keyframes anim-button {
     from {
         opacity: 0;
-        scale: 1;
     }
     to {
         opacity: 1;
-        scale: 0.9;
     }
 }
