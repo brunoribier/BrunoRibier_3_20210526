@@ -4,6 +4,7 @@
     background-color: $white;
     box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, .15);
     z-index: 2;
+    position: relative;
     &__logo {
         padding: 1em 0 1em 0;
         width: 50%;
@@ -14,6 +15,12 @@
         font-size: 20rem;
         font-weight: bold;
         text-align: center;
+    }
+    & i {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 20px 0 0 20px;
     }
 }
 

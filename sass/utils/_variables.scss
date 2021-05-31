@@ -12,4 +12,8 @@ $white: #ffffff;
 $green-light: #88deca;
 $dark-green: #007450;
 
-$primary-color-light-hover: rgba(147, 86, 220, .2)
+$primary-color-light-hover: rgba(147, 86, 220, .2);
+
+$primary-light: lighten($primary-color, 5%);
+$secondary-light: lighten($secondary-color, 5%);
+

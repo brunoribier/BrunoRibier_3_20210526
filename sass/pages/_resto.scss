@@ -1,0 +1,106 @@
+body {
+    background-color: $super-light-grey;
+}
+
+.hero-menu {
+    display: flex;
+    width: 100%;
+    z-index: 0;
+    & img {
+        object-fit: cover;
+        width: 100%;
+        max-height: 500px;
+    }
+}
+
+.container-resto {
+    transform: translateY(-50px);
+    background-color: $super-light-grey;
+    z-index: 1;
+    @media screen and (max-width: 1024px) {
+        border-radius: 30px 30px 0 0;        
+    }
+}
+
+.menu-heading {
+    display: flex;
+    justify-content: space-around;
+    background-color: $super-light-grey;
+    border-radius: 30px 30px 0 0;
+    align-items: center;
+    padding: 1em 1em 1em 1em;
+    font-size: 1.5rem;
+    @media screen and (max-width: 1024px) {
+        justify-content: space-between;
+    }
+    & h1 {
+        font-family: 'Shrikhand', cursive;
+        font-size: 1.5rem;
+    }
+    & i {
+        font-size: 1.5rem;
+    }
+}
+
+.menu {
+    margin-top: 15px;
+    &-part {
+        text-transform: uppercase;
+        font-weight: 100;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2em;
+        @media screen and (max-width: 1024px) {
+            align-items: flex-start;
+            padding-left: 1em;
+        }
+        &__underline {
+            background-color: $tertiary-color;
+            width: 50px;
+            height: 3px;
+        }
+    }
+    &-list {
+        display: flex;
+        justify-content: space-around;
+        @media screen and (max-width: 1024px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &-component {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        background-color: $white;
+        border-radius: 15px;
+        margin: 10px 10px 5px 10px;
+        padding: 0.7em;
+        width: 40%;
+        color: black;
+        box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, .15);
+        @media screen and (max-width: 1024px) {
+            width: 90%;
+        }
+        &__text {
+            & h3 {
+                font-size: 1em;
+                font-weight: 500;
+            }
+            & h4 {
+                font-size: .9em;
+                font-weight: 100;
+            }
+        }
+        &__rate {
+            font-weight: 500;
+        }
+    }
+}
+
+.bottom-order {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+}

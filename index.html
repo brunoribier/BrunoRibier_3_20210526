@@ -25,6 +25,11 @@
 </head>
 <!-- serious stuff starts right here -->
 <body>
+	<div class="loader">
+		<div class="loader__bullet-1"></div>
+		<div class="loader__bullet-2"></div>
+		<div class="loader__bullet-3"></div>
+	</div>
 	<header class="header">
 		<img class="header__logo" src="images/logo/ohmyfood@2x.svg" alt="ohmyfood-logo">
 	</header>
@@ -32,11 +37,11 @@
 		<i class="fas fa-map-marker-alt"></i>
 		<p>Paris, Belleville</p>
 	</section>
-	<container>
+	<container class="container">
 <!-- section hero-->
 		<section class="hero">
 			<h1>Réserver le menu qui vous convient</h1>
-			<h2>Découvrez des restaurants d'exception, sélectionnés par nos soins</h2>
+			<h3>Découvrez des restaurants d'exception, sélectionnés par nos soins</h3>
 			<button>Explorer nos restaurants</button>
 		</section>
 <!-- section fonctionnement -->
@@ -45,8 +50,18 @@
 			<div class="fctnmt-list">
 				<div class="fctnmt-step">
 					<p class="fctnmt-step__count">1</p>
-					<i class="fas fa-mobile-alt"></i>
+					<i class="fas fa-mobile-alt icon-1"></i>
 					<p class="fctnmt-step__title">Choississez un restaurant</p>
+				</div>
+				<div class="fctnmt-step">
+					<p class="fctnmt-step__count">2</p>
+					<i class="fas fa-list icon-2"></i>
+					<p class="fctnmt-step__title">Composez votre menu</p>
+				</div>
+				<div class="fctnmt-step">
+					<p class="fctnmt-step__count">3</p>
+					<i class="fas fa-store icon-3"></i>
+					<p class="fctnmt-step__title">Dégustez au restaurant</p>
 				</div>
 			</div>
 		</section>
@@ -79,7 +94,7 @@
 			<a href=""> Proposer un restaurant</a>
 		</div>
 		<div class="footer__nav2">
-			<i class="fas fa-handshake"></i>
+			<i class="fas fa-hands-helping"></i>
 			<a href="">Devenir partenaire</a>
 		</div>
 		<a href="">Mentions légales</a>
