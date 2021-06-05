@@ -572,6 +572,12 @@ button:hover::before {
   padding: 4em 2em 4em 2em;
 }
 
+@media screen and (max-width: 1024px) {
+  .restaurants {
+    padding: 4em 0.5em 4em 0.5em;
+  }
+}
+
 .resto-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -603,7 +609,7 @@ button:hover::before {
 
 @media screen and (max-width: 1024px) {
   .resto-prev {
-    width: 90%;
+    width: 95%;
   }
 }
 

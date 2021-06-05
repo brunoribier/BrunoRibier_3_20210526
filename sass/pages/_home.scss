@@ -222,6 +222,9 @@
 .restaurants {
     background-color: $light-grey;
     padding: 4em 2em 4em 2em;
+    @media screen and (max-width: 1024px) {
+        padding: 4em 0.5em 4em 0.5em;
+    }
 }
 
 .resto-list {
@@ -240,7 +243,7 @@
     border-radius: 10px 10px 10px 10px;
     width: 45%;
     @media screen and (max-width: 1024px) {
-        width: 90%;
+        width: 95%;
     }
     & a {
         text-decoration: none;
