@@ -62,6 +62,68 @@ button:hover::before {
   }
 }
 
+.heart-icon {
+  fill: transparent;
+}
+
+.heart-icon svg {
+  overflow: visible;
+  width: 1.5rem;
+  margin-right: 2em;
+  stroke: black;
+  stroke-width: 2rem;
+  stroke-opacity: 1;
+}
+
+.heart-icon svg path {
+  fill: transparent;
+}
+
+.heart-icon svg path:hover {
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-animation: anim-heart 1s forwards;
+          animation: anim-heart 1s forwards;
+}
+
+@-webkit-keyframes anim-heart {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  33% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    fill: url(#Gradient);
+    stroke: url(#Gradient);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    fill: url(#Gradient);
+    stroke: url(#Gradient);
+  }
+}
+
+@keyframes anim-heart {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  33% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    fill: url(#Gradient);
+    stroke: url(#Gradient);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    fill: url(#Gradient);
+    stroke: url(#Gradient);
+  }
+}
+
 * {
   font-family: 'Roboto', sans-serif;
   margin: 0px;
@@ -95,11 +157,19 @@ button:hover::before {
   text-align: center;
 }
 
+.header a:visited {
+  color: black;
+}
+
 .header i {
   position: absolute;
   top: 33%;
   left: 10%;
   font-size: 1.5rem;
+}
+
+.header i:active {
+  color: #9356DC;
 }
 
 .footer {
@@ -585,30 +655,6 @@ button:hover::before {
   margin: 0 0 0 0;
 }
 
-.resto-prev__bottom .heart-icon {
-  fill: transparent;
-}
-
-.resto-prev__bottom .heart-icon svg {
-  overflow: visible;
-  width: 1.5rem;
-  margin-right: 2em;
-  stroke: black;
-  stroke-width: 2rem;
-  stroke-opacity: 1;
-}
-
-.resto-prev__bottom .heart-icon svg path {
-  fill: transparent;
-}
-
-.resto-prev__bottom .heart-icon svg path:hover {
-  -webkit-transform-origin: center;
-          transform-origin: center;
-  -webkit-animation: anim-heart 1s forwards;
-          animation: anim-heart 1s forwards;
-}
-
 .resto-prev__new {
   position: absolute;
   top: 10px;
@@ -617,44 +663,6 @@ button:hover::before {
   color: #007450;
   padding: 3px 10px 3px 10px;
   border-radius: 3px;
-}
-
-@-webkit-keyframes anim-heart {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  33% {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
-    fill: url(#Gradient);
-    stroke: url(#Gradient);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    fill: url(#Gradient);
-    stroke: url(#Gradient);
-  }
-}
-
-@keyframes anim-heart {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  33% {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
-    fill: url(#Gradient);
-    stroke: url(#Gradient);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    fill: url(#Gradient);
-    stroke: url(#Gradient);
-  }
 }
 
 body {
@@ -714,10 +722,6 @@ body {
 
 .menu-heading h1 {
   font-family: 'Shrikhand', cursive;
-  font-size: 1.5rem;
-}
-
-.menu-heading i {
   font-size: 1.5rem;
 }
 
