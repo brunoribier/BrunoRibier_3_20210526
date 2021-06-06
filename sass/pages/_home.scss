@@ -109,7 +109,6 @@
     margin-bottom: 2em;
     @media screen and (max-width: 1024px) {
         text-align: left;
-        margin-left: 5%;
     }
 }
 
@@ -224,6 +223,9 @@
     padding: 4em 2em 4em 2em;
     @media screen and (max-width: 1024px) {
         padding: 4em 0.5em 4em 0.5em;
+    }
+    & h2 {
+        margin-left: 2.5%;
     }
 }
 
