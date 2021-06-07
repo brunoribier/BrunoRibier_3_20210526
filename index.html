@@ -22,6 +22,8 @@
 	<meta name="twitter:creator" content="@author_handle">
 <!-- Twitter Summary card images must be at least 200x200px -->
 	<meta name="twitter:image" content="">
+<!-- favicon-->
+	<link rel="icon" href="./images/icon/utensils-solid.svg"/>
 </head>
 <!-- serious stuff starts right here -->
 <body>
@@ -33,18 +35,20 @@
 	<header class="header">
 		<img class="header__logo" src="images/logo/ohmyfood@2x.svg" alt="ohmyfood-logo">
 	</header>
-	<section class="localisation">
+	<div class="localisation">
 		<i class="fas fa-map-marker-alt"></i>
 		<p>Paris, Belleville</p>
-	</section>
-	<container class="container">
+	</div>
+	<div class="container">
 <!-- section hero-->
 		<section class="hero">
 			<h1>Réserver le menu qui vous convient</h1>
 			<h3>Découvrez des restaurants d'exception, sélectionnés par nos soins</h3>
-			<a href="#resto">
-				<button>Explorer nos restaurants</button>
-			</a>
+			<form action="#resto">
+				<button>
+					Explorer nos restaurants
+				</button>
+			</form>
 		</section>
 <!-- section fonctionnement -->
 		<section class="fctnmt">
@@ -104,7 +108,7 @@
 							<div class="heart-icon">
 								<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
 									<defs>
-										<linearGradient id="Gradient" x1="0" y1="0" x2="0" y2="1">
+										<linearGradient x1="0" y1="0" x2="0" y2="1">
 											<stop offset="0%" stop-color="#9356DC" stop-opacity="1"/>
 											<stop offset="100%" stop-color="#FF79DA" stop-opacity="1"/>
 										</linearGradient>
@@ -126,7 +130,7 @@
 							<div class="heart-icon">
 								<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
 									<defs>
-										<linearGradient id="Gradient" x1="0" y1="0" x2="0" y2="1">
+										<linearGradient x1="0" y1="0" x2="0" y2="1">
 											<stop offset="0%" stop-color="#9356DC" stop-opacity="1"/>
 											<stop offset="100%" stop-color="#FF79DA" stop-opacity="1"/>
 										</linearGradient>
@@ -147,7 +151,7 @@
 							<div class="heart-icon">
 								<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
 									<defs>
-										<linearGradient id="Gradient" x1="0" y1="0" x2="0" y2="1">
+										<linearGradient x1="0" y1="0" x2="0" y2="1">
 											<stop offset="0%" stop-color="#9356DC" stop-opacity="1"/>
 											<stop offset="100%" stop-color="#FF79DA" stop-opacity="1"/>
 										</linearGradient>
@@ -159,7 +163,7 @@
 				</article>
 			</div>
 		</section>
-	</container>
+	</div>
 <!-- footer -->
 	<footer class="footer">
 		<img src="images/logo/ohmyfood@2x.svg" alt="logo footer" class="footer__logo">

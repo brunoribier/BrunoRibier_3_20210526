@@ -7,6 +7,9 @@
         stroke: black;
         stroke-width: 2rem;
         stroke-opacity: 1;
+        @media screen and (max-width: 768px) {
+            margin-right: 1em;
+        }
         path {
             fill: transparent;
             &:hover {

@@ -84,9 +84,6 @@ body {
         overflow: hidden;
         cursor: pointer;
         animation: load-display 2s ease backwards;
-        &:nth-child(1) {
-            animation-delay: 0;
-        }
         &:nth-child(2) {
             animation-delay: .3s;
         }
@@ -114,6 +111,7 @@ body {
             white-space: nowrap;
             & h3, h4 {
                 text-overflow: ellipsis;
+                overflow: hidden;
             }
             & h3 {
                 font-size: 1em;
