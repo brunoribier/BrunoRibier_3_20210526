@@ -824,25 +824,12 @@ body {
 }
 
 .menu-component {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 content;
-          flex: 1 1 content;
   position: relative;
   background-color: #ffffff;
   border-radius: 15px;
   margin: 10px 10px 5px 10px;
   width: 40%;
+  height: 55px;
   color: black;
   -webkit-box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.15);
@@ -887,12 +874,11 @@ body {
   padding: 0.7em;
   margin-right: 1em;
   overflow: hidden;
-  white-space: nowrap;
 }
 
 .menu-component__text h3, .menu-component__text h4 {
   text-overflow: ellipsis;
-  overflow: hidden;
+  white-space: nowrap;
 }
 
 .menu-component__text h3 {
@@ -905,29 +891,20 @@ body {
   font-weight: 100;
 }
 
-.menu-component__right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -ms-flex-item-align: stretch;
-      align-self: stretch;
-  -webkit-transform: translateX(3.5em);
-          transform: translateX(3.5em);
-  bottom: 0px;
-  right: 0px;
-}
-
 .menu-component__right__rate {
   font-weight: 500;
-  padding: 0 1em 0.7em 0;
+  background-color: white;
+  position: absolute;
+  bottom: 4px;
+  right: 0px;
+  height: 25px;
+  padding: 25px 20px 5px 10px;
 }
 
 .menu-component__right__check {
+  position: absolute;
+  bottom: 0px;
+  right: -88px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -938,7 +915,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #88deca;
-  padding: 0 1em 0 1em;
+  padding: 1.1em 2em;
   -ms-flex-item-align: stretch;
       align-self: stretch;
 }
@@ -951,23 +928,23 @@ body {
 
 @-webkit-keyframes check-slide {
   from {
-    -webkit-transform: translateX(3.5em);
-            transform: translateX(3.5em);
-  }
-  to {
     -webkit-transform: translateX(0);
             transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-88px);
+            transform: translateX(-88px);
   }
 }
 
 @keyframes check-slide {
   from {
-    -webkit-transform: translateX(3.5em);
-            transform: translateX(3.5em);
-  }
-  to {
     -webkit-transform: translateX(0);
             transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-88px);
+            transform: translateX(-88px);
   }
 }
 
