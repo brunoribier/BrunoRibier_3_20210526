@@ -95,7 +95,7 @@ body {
         }
         &:hover &__right__check {
             right: 0;
-            /* animation: check-slide .6s ease-in-out both; */
+            /* animation: check-slide .6s ; */
             & i {
                 animation: check-spin .6s ease-in-out forwards;
             }
@@ -123,18 +123,19 @@ body {
             }
         }
         &__right {
+            &__rate, &__check {
+                position: absolute;
+                transition: .6s ease-in-out;
+            }
             &__rate {
                 font-weight: 500;
                 background-color: white;
-                position: absolute;
                 bottom: 4px;
                 right: 0px;
                 height: 25px;
                 padding: 25px 20px 5px 10px;
-                transition: .6s;
             }
             &__check {
-                position: absolute;
                 bottom: 0px;
                 right: -88px;
                 display: flex;
@@ -143,7 +144,6 @@ body {
                 background-color: $green-light;
                 padding: 1em 2em;
                 align-self: stretch;
-                transition: .6s;
                 & i {
                     filter: invert(100%);
                     font-size: 1.5rem;

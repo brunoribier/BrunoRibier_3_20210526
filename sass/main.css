@@ -862,7 +862,7 @@ body {
 
 .menu-component:hover .menu-component__right__check {
   right: 0;
-  /* animation: check-slide .6s ease-in-out both; */
+  /* animation: check-slide .6s ; */
 }
 
 .menu-component:hover .menu-component__right__check i {
@@ -902,20 +902,22 @@ body {
   font-weight: 100;
 }
 
+.menu-component__right__rate, .menu-component__right__check {
+  position: absolute;
+  -webkit-transition: .6s ease-in-out;
+  transition: .6s ease-in-out;
+}
+
 .menu-component__right__rate {
   font-weight: 500;
   background-color: white;
-  position: absolute;
   bottom: 4px;
   right: 0px;
   height: 25px;
   padding: 25px 20px 5px 10px;
-  -webkit-transition: .6s;
-  transition: .6s;
 }
 
 .menu-component__right__check {
-  position: absolute;
   bottom: 0px;
   right: -88px;
   display: -webkit-box;
@@ -931,8 +933,6 @@ body {
   padding: 1em 2em;
   -ms-flex-item-align: stretch;
       align-self: stretch;
-  -webkit-transition: .6s;
-  transition: .6s;
 }
 
 .menu-component__right__check i {
