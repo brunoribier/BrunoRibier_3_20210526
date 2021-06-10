@@ -93,13 +93,15 @@ body {
         @media screen and (max-width: 1024px) {
             width: 90%;
         }
-        &:hover &__right {
-            animation: check-slide .6s ease-in-out both;
+        &:hover &__right__check {
+            right: 0;
+            /* animation: check-slide .6s ease-in-out both; */
             & i {
                 animation: check-spin .6s ease-in-out forwards;
             }
         }
-        &:hover &__text {
+        &:hover &__right__rate {
+            right: 88px;
         }
         &__text {
             padding: 0.7em;
@@ -127,6 +129,7 @@ body {
                 right: 0px;
                 height: 25px;
                 padding: 25px 20px 5px 10px;
+                transition: .6s;
             }
             &__check {
                 position: absolute;
@@ -136,8 +139,9 @@ body {
                 align-items: center;
                 justify-content: center;
                 background-color: $green-light;
-                padding: 1.1em 2em;
+                padding: 1em 2em;
                 align-self: stretch;
+                transition: .6s;
                 & i {
                     filter: invert(100%);
                     font-size: 1.5rem;
