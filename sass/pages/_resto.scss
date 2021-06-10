@@ -126,17 +126,16 @@ body {
             &__rate, &__check {
                 position: absolute;
                 transition: .6s ease-in-out;
+                bottom: 0px;
             }
             &__rate {
                 font-weight: 500;
                 background-color: white;
-                bottom: 4px;
                 right: 0px;
                 height: 25px;
                 padding: 25px 20px 5px 10px;
             }
             &__check {
-                bottom: 0px;
                 right: -88px;
                 display: flex;
                 align-items: center;

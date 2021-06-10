@@ -906,19 +906,18 @@ body {
   position: absolute;
   -webkit-transition: .6s ease-in-out;
   transition: .6s ease-in-out;
+  bottom: 0px;
 }
 
 .menu-component__right__rate {
   font-weight: 500;
   background-color: white;
-  bottom: 4px;
   right: 0px;
   height: 25px;
   padding: 25px 20px 5px 10px;
 }
 
 .menu-component__right__check {
-  bottom: 0px;
   right: -88px;
   display: -webkit-box;
   display: -ms-flexbox;
