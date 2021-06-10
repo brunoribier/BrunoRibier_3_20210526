@@ -107,6 +107,8 @@ body {
             padding: 0.7em;
             margin-right: 1em;
             overflow: hidden;
+            display: flex;
+            flex-direction: column;
             & h3, h4 {
                 text-overflow: ellipsis;
                 white-space: nowrap;
