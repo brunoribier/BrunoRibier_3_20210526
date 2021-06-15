@@ -70,12 +70,14 @@ body {
         }
     }
     &-component {
-        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-wrap: nowrap;
         background-color: $white;
         border-radius: 15px;
         margin: 10px 10px 5px 10px;
         width: 40%;
-        height: 55px;
         color: black;
         box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, .15);
         overflow: hidden;
@@ -93,25 +95,20 @@ body {
         @media screen and (max-width: 1024px) {
             width: 90%;
         }
-        &:hover &__right__check {
-            right: 0;
-            /* animation: check-slide .6s ; */
+        &:hover &__right {
+            /* animation: check-slide .6s both; */
             & i {
                 animation: check-spin .6s ease-in-out forwards;
             }
-        }
-        &:hover &__right__rate {
-            right: 88px;
         }
         &__text {
             padding: 0.7em;
             margin-right: 1em;
             overflow: hidden;
-            display: flex;
-            flex-direction: column;
             & h3, h4 {
                 text-overflow: ellipsis;
                 white-space: nowrap;
+                overflow: hidden;
             }
             & h3 {
                 font-size: 1em;
@@ -123,20 +120,16 @@ body {
             }
         }
         &__right {
-            &__rate, &__check {
-                position: absolute;
-                transition: .6s ease-in-out;
-                bottom: 0px;
-            }
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+            align-self: stretch;
             &__rate {
                 font-weight: 500;
                 background-color: white;
-                right: 0px;
-                height: 25px;
-                padding: 25px 20px 5px 10px;
+                padding: .5em;
             }
             &__check {
-                right: -88px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -154,10 +147,10 @@ body {
 
 @keyframes check-slide {
     from {
-        transform: translateX(0);
+        transform: translateX(88px);
     }
     to {
-        transform: translateX(-88px);
+        transform: translateX(0);
     }
 }
 
