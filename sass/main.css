@@ -835,9 +835,6 @@ body {
           align-items: flex-end;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 content;
-          flex: 1 1 content;
   background-color: #ffffff;
   border-radius: 15px;
   margin: 10px 10px 5px 10px;
