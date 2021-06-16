@@ -53,7 +53,7 @@ body {
         margin-top: 2em;
         @media screen and (max-width: 1024px) {
             align-items: flex-start;
-            padding-left: 1em;
+            padding-left: 2em;
         }
         &__underline {
             background-color: $tertiary-color;

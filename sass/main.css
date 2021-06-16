@@ -793,7 +793,7 @@ body {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    padding-left: 1em;
+    padding-left: 2em;
   }
 }
 
